@@ -21,7 +21,9 @@
 [image15]: ./writeup_images/test6.png
 [image16]: ./writeup_images/labels1.png
 
-##### Here I will consider the [rubric](https://review.udacity.com/#!/rubrics/513/view) points individually and describe how I addressed each point in my implementation. Most of the code is from the course material itself. I understood the code and used it when appropriate.
+##### Here I will consider the [rubric](https://review.udacity.com/#!/rubrics/513/view) points individually and describe how I addressed each point in my implementation. 
+
+##### Most of the code is from the course material itself. I understood the code and used it when appropriate.
 
 ---
 
