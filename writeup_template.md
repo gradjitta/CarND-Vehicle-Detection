@@ -21,7 +21,7 @@
 [image15]: ./writeup_images/test6.png
 [image16]: ./writeup_images/labels1.png
 
-##### Here I will consider the [rubric](https://review.udacity.com/#!/rubrics/513/view) points individually and describe how I addressed each point in my implementation.  
+##### Here I will consider the [rubric](https://review.udacity.com/#!/rubrics/513/view) points individually and describe how I addressed each point in my implementation. Most of the code is from the course material itself. I understood the code and used it when appropriate.
 
 ---
 
@@ -66,6 +66,7 @@ The above choice was made from following some discussions in December Facebook g
 
 #### 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
 
+Refer code in cell block 10, 11, and 12.
 
 The following code is used for splitting the data into training and test sets.
 ```python
@@ -85,7 +86,7 @@ svc.fit(X_train, y_train)
 
 #### 1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
 
-I used the code (from the course material) in cell 7 the function `` find_cars `` uses the scale parameter [0.75, 1.0, 2.0, 3.0] and the search region increases with increase in scale parameter [400, 500], [400, 550], [400, 600] , [400, 700]. My choice of using scaled implementation over sliding window was it implicitly takes care of the bounding box sizes and instead of overlap the code defines number of cells to step.
+I used the code (from the course material) in cell 7 the function ``find_cars`` uses the scale parameter [0.75, 1.0, 2.0, 3.0] and the search region increases with increase in scale parameter [400, 500], [400, 550], [400, 600] , [400, 700]. My choice of using scaled implementation over sliding window was it implicitly takes care of the bounding box sizes and instead of overlap the code defines number of cells to step.
 
 #### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
